@@ -17,6 +17,13 @@ public class Categoria {
 	
 	@NotNull(message = "O atributo tipo é obrigatório")
 	private String tipo;
+	
+	public Categoria(Long id, String tipo) {
+		this.id = id;
+		this.tipo = tipo;
+	}
+	
+	public Categoria() {    }
 
 	public Long getId() {
 		return id;
@@ -33,6 +40,7 @@ public class Categoria {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
+	
 	
 	
 }
